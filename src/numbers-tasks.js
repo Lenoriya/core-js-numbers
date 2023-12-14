@@ -244,8 +244,11 @@ function isPrime(/* n */ n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
+function toNumber(/* value, def */ value, def) {
+  // throw new Error('Not implemented');
+  const str = Number(value);
+  if (Number.isInteger(str) === true) return str;
+  return def;
 }
 
 /**
