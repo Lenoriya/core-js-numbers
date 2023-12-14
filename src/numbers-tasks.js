@@ -615,10 +615,10 @@ function getIntegerPartNumber(/* number */ number) {
  * 1, 2, 3       => 6
  * 0.1, 0.2, 0.3 => 0.6
  */
-function getSumOfNumbers(/* x1, x2, x3 */) {
-  throw new Error('Not implemented');
-  // const sum = x1 + x2 + x3;
-  // return sum;
+function getSumOfNumbers(/* x1, x2, x3 */ x1, x2, x3) {
+  // throw new Error('Not implemented');
+  const sum = x1 + x2 + x3;
+  return sum.toFixed(10);
 }
 
 /**
