@@ -373,8 +373,10 @@ function getSine(/* num */ num) {
  * 255, 16 => 'ff'
  * 2, 2    => '10'
  */
-function numberToStringInBase(/* number, base */) {
-  throw new Error('Not implemented');
+function numberToStringInBase(/* number, base */ number, base) {
+  // throw new Error('Not implemented');
+  const str = number.toString(base);
+  return str;
 }
 
 /**
