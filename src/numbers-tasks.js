@@ -580,8 +580,10 @@ function roundToLargestInteger(/* number */ number) {
  * 5.4  => 5
  * -5.5 => -5
  */
-function roundToNearestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToNearestInteger(/* number */ number) {
+  // throw new Error('Not implemented');
+  const getFloat = Math.round(number);
+  return getFloat;
 }
 
 /**
