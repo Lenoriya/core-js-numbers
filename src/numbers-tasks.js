@@ -158,7 +158,7 @@ function getLastDigit(/* value */ argument) {
  */
 function parseNumberFromString(/* value */ value) {
   // throw new Error('Not implemented');
-  const num = Number(value);
+  const num = +value;
   return num;
 }
 
@@ -175,8 +175,10 @@ function parseNumberFromString(/* value */ value) {
  *   3,3,3   => 5.196152422706632
  *   1,2,3   => 3.741657386773941
  */
-function getParallelepipedDiagonal(/* a, b, c */) {
-  throw new Error('Not implemented');
+function getParallelepipedDiagonal(/* a, b, c */ a, b, c) {
+  // throw new Error('Not implemented');
+  const d = Math.sqrt(a ** 2 + b ** 2 + c ** 2);
+  return d;
 }
 
 /**
