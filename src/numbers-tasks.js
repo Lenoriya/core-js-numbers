@@ -531,8 +531,10 @@ function getIntegerOnString(/* str, base */ str, base) {
  * 3.5      => false
  * 2 ** 53  => false
  */
-function isSafeInteger(/* number */) {
-  throw new Error('Not implemented');
+function isSafeInteger(/* number */ number) {
+  // throw new Error('Not implemented');
+  const getFloat = Number.isSafeInteger(number);
+  return getFloat;
 }
 
 /**
