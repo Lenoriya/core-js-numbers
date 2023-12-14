@@ -651,8 +651,10 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(/* min, max */ min, max) {
+  // throw new Error('Not implemented');
+  const rand = Math.random() * (max - min) + min;
+  return Math.round(rand);
 }
 
 /**
