@@ -262,8 +262,10 @@ function toNumber(/* value, def */ value, def) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(/* num */ num) {
+  // throw new Error('Not implemented');
+  const cube = num ** 3;
+  return cube;
 }
 
 /**
