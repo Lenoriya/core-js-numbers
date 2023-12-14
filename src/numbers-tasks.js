@@ -617,6 +617,8 @@ function getIntegerPartNumber(/* number */ number) {
  */
 function getSumOfNumbers(/* x1, x2, x3 */) {
   throw new Error('Not implemented');
+  // const sum = x1 + x2 + x3;
+  // return sum;
 }
 
 /**
@@ -631,8 +633,10 @@ function getSumOfNumbers(/* x1, x2, x3 */) {
  * -5, -6 => -5
  * 0, 5   => 5
  */
-function getMaxNumber(/* firstNumber, secondNumber */) {
-  throw new Error('Not implemented');
+function getMaxNumber(firstNumber, secondNumber) {
+  // throw new Error('Not implemented');
+  const max = Math.max(firstNumber, secondNumber);
+  return max;
 }
 
 /**
