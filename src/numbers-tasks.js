@@ -461,8 +461,10 @@ function getNumberValue(/* number */ number) {
  * 5        => true
  * '5'      => false
  */
-function isNumber(/* number */) {
-  throw new Error('Not implemented');
+function isNumber(/* number */ number) {
+  // throw new Error('Not implemented');
+  const bool = Number.isFinite(number);
+  return bool;
 }
 
 /**
